@@ -2,6 +2,7 @@ import util
 import math
 import sys
 import random
+import time
 
 class kdTree():
 
@@ -182,10 +183,16 @@ for line in sys.stdin:
     else:
         testingP[point] = pointClass
 
+x = 1000
+startTime = time.perf_counter()
 classifier = xNN(trainingP, testingP)
-classifier.classify(x = 3)
+classifier.classify(x)
 classifier.getStatistics()
+endTime = time.perf_counter()
 
-print(f"Precisão: {classifier.precision}")
-print(f"Revocação: {classifier.recall}")
-print(f"Acurácia: {classifier.accuracy}")
+print(f"Looking for {x} nearest neighbors. There are {len(trainingP)}\
+points in training set and {len(testingP)} points in testing set")
+print(f"Time: {endTime - startTime:0.4f} seconds for {len(list(trainingP.keys())[0])} dimensional data")
+print(f"Precision: {classifier.precision}")
+print(f"Recall: {classifier.recall}")
+print(f"Acuracy: {classifier.accuracy}")
