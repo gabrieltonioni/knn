@@ -5,4 +5,51 @@ A classe da árvore kd também implementa um método para buscar os k pontos arm
 
 Além disso, foi implementada a classe xNN, que instancia uma árvore kd com um conjunto de pontos de treinamento e classifica pontos em um conjunto de pontos de teste. Essa classe tem um método que compara o classe real dos pontos no conjunto de pontos de testes com o a classe atribuida à esses pontos pelo algoritmo knn e calcula as estatísticas precisão, revocação e acurácia. A fórmula utilizada para calcular essas estatísticas só funciona para problemas de classificação com duas classes apenas.
 
-# Execução
+# Testes com os datasets
+
+Com alguns dos datasets o programa não está lendo todas as linhas do arquivo, mas com outros tudo funciona normalmente. Além disso, ocorreu um erro com o teste utilizando o dataset 5. Eu não consegui entender a causa desses erros.
+
+1
+
+![](australian10.PNG)
+
+2
+
+![](heart10.PNG)
+
+3
+
+![](monk-210.PNG)
+
+4
+
+![](titanic10.PNG)
+
+5
+
+![](coil200010.PNG)
+
+6
+
+![](banana10.PNG)
+![](banana1000.PNG)
+
+7
+
+![](phoneme10.PNG)
+![](phoneme1000.PNG)
+
+8
+
+![](ring10.PNG)
+![](ring1000.PNG)
+
+9
+
+![](spambase10.PNG)
+![](spambase1000.PNG)
+
+10
+
+![](twonorm10.PNG)
+![](twonorm1000.PNG)
